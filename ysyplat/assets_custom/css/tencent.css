@@ -1,0 +1,1477 @@
+﻿/* ysyplat 主题 - 渐变科技感 UI 增强样式
+ * 靛紫主色 #6366f1 · 玻璃拟态卡片 · 圆角阴影
+ */
+
+body {
+  background-color: #f5f7fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #252b3a;
+}
+
+/* 卡片 */
+.card {
+  border-radius: 8px;
+  border: 1px solid #e5e6eb;
+  box-shadow: 0 4px 10px rgba(15, 24, 42, 0.04);
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+/* 表格玻璃拟态 */
+.table {
+  color: #252b3a;
+}
+.table thead th {
+  background: #f5f3ff !important;
+  color: #4b4662;
+  border-bottom: 1px solid #ede9fe !important;
+}
+.table tbody tr:hover {
+  background: #f5f3ff !important;
+}
+.table td, .table th {
+  border-color: #ede9fe;
+}
+
+/* 输入框深色适配 */
+.form-control {
+  background: #ede9fe;
+  border: 1px solid #e5e3f0;
+  color: #fff;
+  border-radius: 0.8rem;
+}
+.form-control:focus {
+  background: #e5e3f0;
+  border-color: #c7d2fe;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  color: #fff;
+}
+.form-control::placeholder {
+  color: #b8b3cc;
+}
+select.form-control option {
+  color: #000;
+}
+
+/* 模态框深色适配 */
+.modal-content {
+  background: rgba(15, 15, 25, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid #e5e3f0;
+  border-radius: 1.5rem;
+}
+.modal-header, .modal-footer {
+  border-color: #ede9fe;
+}
+.modal-title {
+  color: #fff;
+}
+.close {
+  color: #6b6786;
+}
+.close:hover {
+  color: #fff;
+}
+
+/* 分页深色适配 */
+.page-link {
+  background: #f5f3ff;
+  border-color: #e5e3f0;
+  color: #4b4662;
+}
+.page-link:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+.page-item.active .page-link {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+/* 面包屑 */
+.breadcrumb {
+  background: transparent;
+}
+.breadcrumb-item a {
+  color: #6b6786;
+}
+.breadcrumb-item.active {
+  color: #a5b4fc;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #d1cfe3;
+}
+
+/* 链接颜色 */
+a {
+  color: #a5b4fc;
+}
+a:hover {
+  color: #c7d2fe;
+}
+
+/* 下拉菜单深色 */
+.dropdown-menu {
+  background: rgba(15, 15, 25, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid #ede9fe;
+}
+.dropdown-item {
+  color: #4b4662;
+}
+.dropdown-item:hover {
+  background: #ede9fe;
+  color: #fff;
+}
+
+/* 标签徽章 */
+.badge {
+  font-weight: 500;
+}
+
+/* 顶部导航条 - 玻璃拟态白 */
+#page-topbar {
+  background: #ede9fe;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 #ede9fe;
+  border-bottom: 1px solid #ede9fe;
+}
+
+.navbar-header {
+  min-height: 60px;
+}
+
+.navbar-brand-box {
+  background: transparent;
+}
+
+.navbar-brand-box .logo-lg img {
+  height: 26px;
+}
+
+.header-item {
+  color: #4b4662;
+}
+
+.header-item:hover,
+.header-item:focus {
+  color: #ffffff;
+}
+
+.bx,
+.mdi {
+  vertical-align: middle;
+}
+
+/* 左侧菜单 - 玻璃拟态深色 */
+.vertical-menu {
+  background: rgba(15, 15, 25, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 1px 0 0 #f5f3ff;
+  width: 180px !important;
+}
+
+/* 调整logo区域宽度 */
+.navbar-brand-box {
+  width: 180px !important;
+}
+
+/* 调整主内容区域左边距 */
+.main-content {
+  margin-left: 180px !important;
+}
+
+/* 优化菜单项间距，使其更紧凑 */
+#sidebar-menu ul li a {
+  padding: 0.5rem 1rem !important;
+  font-size: 13px !important;
+}
+
+#sidebar-menu ul li ul.sub-menu li a {
+  padding: 0.45rem 1rem 0.45rem 2.5rem !important;
+  font-size: 12px !important;
+}
+
+#sidebar-menu ul li ul.sub-menu li ul.sub-menu li a {
+  padding: 0.4rem 1rem 0.4rem 3.5rem !important;
+  font-size: 12px !important;
+}
+
+/* 调整折叠状态下的侧边栏宽度 */
+.vertical-collpsed .vertical-menu {
+  width: 70px !important;
+}
+
+.vertical-collpsed .main-content {
+  margin-left: 70px !important;
+}
+
+.vertical-collpsed .navbar-brand-box {
+  width: 70px !important;
+}
+
+.vertical-menu .mm-active > a,
+.vertical-menu a:hover {
+  background: linear-gradient(90deg, #ede9fe, #ddd6fe);
+  color: #6366f1 !important;
+}
+
+.vertical-menu a {
+  color: #4b4662;
+}
+
+/* 子菜单 - 白色侧栏激活态修复 */
+#sidebar-menu ul li a {
+  color: #4b4662;
+}
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a:focus {
+  color: #6366f1;
+  background: #f5f3ff;
+}
+#sidebar-menu ul li.mm-active > a {
+  color: #6366f1 !important;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ede9fe, #ddd6fe);
+}
+#sidebar-menu ul li.mm-active ul.sub-menu li a {
+  color: #6b6786;
+  background: transparent;
+}
+#sidebar-menu ul li.mm-active ul.sub-menu li a:hover {
+  color: #6366f1;
+  background: #f5f3ff;
+}
+#sidebar-menu ul li.mm-active ul.sub-menu li.mm-active > a {
+  color: #6366f1 !important;
+  font-weight: 600;
+  background: #f5f3ff;
+}
+/* 子菜单展开指示箭头 */
+#sidebar-menu .has-arrow::after {
+  border-color: #4b4662;
+}
+#sidebar-menu .mm-active > .has-arrow::after {
+  border-color: #6366f1;
+}
+
+/* 主内容区域 */
+.main-content {
+  background-color: #f5f7fa;
+}
+
+.page-content {
+  /* 顶部预留导航高度，避免被 fixed 顶栏遮挡 */
+  margin-top: 70px;
+  padding: 24px 24px 40px;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #e5e6eb;
+  box-shadow: 0 4px 10px rgba(15, 24, 42, 0.04);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+/* 个人中心头部头像与名称，更接近腾讯云用户卡片 */
+.user-center_header {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-weight: 500;
+}
+
+.user-center_name {
+  font-weight: 500;
+  color: #1d2129;
+}
+
+.user-center_safety_wrapper .user-center_safety {
+  background-color: #f2f3f5;
+  color: #6366f1;
+  border-radius: 6px;
+}
+
+.user-center_safety_wrapper .user-center_safety:hover {
+  background: rgba(31, 111, 255, 0.08);
+}
+
+/* 右上角个人中心下拉菜单 - 腾讯云风格 */
+.user-dropdown-menu {
+  min-width: 190px;
+  padding: 10px 0;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+}
+
+.user-dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 9px 18px;
+  font-size: 14px;
+  color: #1e1b4b;
+}
+
+.user-dropdown-menu .dropdown-item i {
+  width: 18px;
+  text-align: center;
+  color: #1e1b4b;
+}
+
+.user-dropdown-menu .dropdown-item span {
+  margin-left: 8px;
+}
+
+.user-dropdown-menu .dropdown-item:hover {
+  background: rgba(0, 122, 255, 0.06);
+  color: #6366f1;
+}
+
+.user-dropdown-menu .dropdown-item:hover i {
+  color: #6366f1;
+}
+
+.user-dropdown-logout {
+  border-top: 1px solid #f3f3f3;
+  margin-top: 4px;
+}
+
+/* 首页数据概览卡片布局 */
+.user-center_h300 {
+  background: #ffffff;
+}
+
+.user-center_product_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 12px;
+}
+
+.user-center_product {
+  background: #f5f7fa;
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #252b3a;
+}
+
+.user-center_product:hover {
+  text-decoration: none;
+  background: rgba(0, 164, 255, 0.1);
+}
+
+/* 公告列表 */
+.user-center_notice_item {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 0;
+}
+
+.user-center_notice_item .notice_item_title {
+  color: #252b3a;
+}
+
+.user-center_notice_item .notice_item_title:hover {
+  color: #6366f1;
+}
+
+/* 腾讯云风格公告栏 - 网格布局 */
+.tc-notice-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 20px;
+  width: 100%;
+}
+
+.tc-notice-grid-item {
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tc-notice-item-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.tc-notice-grid-item:hover .tc-notice-item-content {
+  background: #f7f8fa;
+}
+
+.tc-notice-icon {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #86909c;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.tc-notice-item-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.tc-notice-title {
+  font-size: 13px;
+  color: #1d2129;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.tc-notice-time {
+  font-size: 12px;
+  color: #86909c;
+  line-height: 1.4;
+}
+
+.tc-notice-grid-item:hover .tc-notice-title {
+  color: #6366f1;
+}
+
+.tc-notice-empty-wrapper {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.tc-notice-empty {
+  font-size: 13px;
+  color: #86909c;
+}
+
+/* 响应式：平板和手机端适配 */
+@media (max-width: 991.98px) {
+  /* 确保卡片在小屏幕时全宽 */
+  .tc-dashboard .row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tc-dashboard .row > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* 手机端：调整显示顺序，账户信息优先显示 */
+  .tc-account-section {
+    order: -1; /* 账户信息区域显示在最上面 */
+  }
+  
+  .tc-resource-section {
+    order: 1; /* 我的资源区域显示在下面 */
+  }
+  
+  .tc-notice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 16px;
+  }
+  
+  /* 调整卡片内边距 */
+  .tc-panel-main,
+  .tc-panel-right {
+    padding: 12px 16px !important;
+  }
+  
+  /* 费用信息卡片在手机端调整 */
+  .tc-fee-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .tc-fee-tabs {
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .tc-fee-tabs a {
+    margin-left: 0;
+    margin-right: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+/* 响应式：手机屏幕时改为1列 */
+@media (max-width: 576px) {
+  /* 确保在手机端账户信息优先显示 */
+  .tc-dashboard .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tc-account-section {
+    order: -1 !important; /* 账户信息区域显示在最上面 */
+  }
+  
+  .tc-resource-section {
+    order: 1 !important; /* 我的资源区域显示在下面 */
+  }
+  
+  .tc-notice-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  /* 手机端卡片间距调整 */
+  .tc-row-gap > [class^="col-"] {
+    margin-bottom: 16px;
+  }
+  
+  /* 账户信息卡片在手机端优化 */
+  .tc-account-security {
+    flex-wrap: wrap;
+  }
+  
+  .tc-security-item {
+    flex: 0 0 calc(33.333% - 6px);
+    margin-bottom: 8px;
+  }
+  
+  .tc-account-todo {
+    flex-direction: column;
+  }
+  
+  .tc-account-todo-item {
+    margin-left: 0 !important;
+    margin-bottom: 8px;
+  }
+  
+  /* 费用信息卡片在手机端 */
+  .tc-fee-card {
+    margin-bottom: 12px;
+  }
+  
+  /* 产品网格在手机端 */
+  .user-center_product_grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 调整页面内边距 - 增加左右间距，避免卡片拥挤 */
+  .page-content {
+    padding: 16px 16px 24px !important;
+  }
+  
+  /* 调整卡片标题和内容 */
+  .tc-panel-title {
+    font-size: 14px !important;
+  }
+  
+  .tc-panel-subtitle {
+    font-size: 11px !important;
+  }
+}
+
+/* 控制台首页整体布局（接近腾讯云） */
+.tc-dashboard {
+  margin-top: 4px;
+}
+
+.tc-row-gap > [class^="col-"] {
+  margin-bottom: 16px;
+}
+
+.tc-panel {
+  border-radius: 8px;
+  border: 1px solid #e5e6eb;
+  box-shadow: 0 4px 16px rgba(15, 24, 42, 0.04);
+}
+
+.tc-panel-main {
+  padding: 16px 20px 18px;
+}
+
+.tc-panel-right {
+  padding: 14px 18px 16px;
+}
+
+.tc-panel-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f3f5;
+  margin-bottom: 10px;
+}
+
+.tc-panel-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+.tc-panel-subtitle {
+  font-size: 12px;
+  color: #86909c;
+}
+
+.tc-panel-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tc-panel-footer {
+  margin-top: 14px;
+  border-top: 1px solid #f2f3f5;
+  padding-top: 12px;
+}
+
+.tc-block-title {
+  font-size: 13px;
+  color: #4e5969;
+}
+
+.tc-link-small {
+  font-size: 12px;
+  color: #6366f1;
+}
+
+.tc-link-small:hover {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.tc-resource-list {
+  min-height: 120px;
+}
+
+/* 账户卡片 */
+.tc-account-card .tc-avatar-wrapper {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #f2f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tc-account-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+.tc-account-id {
+  font-size: 12px;
+  color: #86909c;
+}
+
+.tc-account-contact {
+  font-size: 12px;
+  color: #86909c;
+}
+
+.tc-account-security {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tc-security-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 4px;
+  border-radius: 4px;
+  background: #f7f8fa;
+  margin-right: 8px;
+  font-size: 12px;
+  color: #1d2129;
+}
+
+.tc-security-item:last-child {
+  margin-right: 0;
+}
+
+.tc-security-item i {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.tc-security-item[data-status="off"] {
+  color: #c9cdd4;
+}
+
+.tc-security-item:hover {
+  text-decoration: none;
+  background: rgba(0, 122, 255, 0.06);
+}
+
+.tc-account-todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.tc-account-todo-item {
+  position: relative;
+  flex: 1;
+  padding: 6px 4px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.tc-account-todo-item + .tc-account-todo-item {
+  margin-left: 8px;
+}
+
+.tc-account-todo-num {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tc-account-todo-label {
+  font-size: 12px;
+  color: #86909c;
+}
+
+/* 费用信息 */
+.tc-balance-chart {
+  min-height: 110px;
+}
+
+.tc-fee-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f2f3f5;
+}
+
+.tc-fee-balance-label {
+  font-size: 12px;
+  color: #86909c;
+}
+
+.tc-fee-balance-value {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+.tc-fee-tabs a {
+  font-size: 12px;
+  color: #4e5969;
+  margin-left: 16px;
+}
+
+.tc-fee-tabs a:hover {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.tc-fee-recharge-btn {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.tc-fee-card {
+  border-radius: 4px;
+  background: #f7f8fa;
+  padding: 14px 16px;
+}
+
+.tc-fee-card-label {
+  font-size: 12px;
+  color: #86909c;
+}
+
+.tc-fee-card-value {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1d2129;
+}
+
+.tc-fee-card-unit {
+  font-size: 12px;
+  color: #4e5969;
+}
+
+/* 页脚样式 */
+.footer {
+  background: #0b1020;
+  color: #c0c6d2;
+  border-top: none;
+  display: none !important;
+}
+
+.footer a {
+  color: #8a93a9;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-links span {
+  color: #8a93a9;
+}
+
+/* 响应式微调 */
+/* 手机端主内容区域调整 */
+@media (max-width: 767.98px) {
+  /* 确保主内容区域在手机端全宽 */
+  .main-content {
+    margin-left: 0 !important;
+  }
+  
+  /* 侧边栏在手机端隐藏或调整 */
+  .vertical-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  body.sidebar-enable .vertical-menu {
+    transform: translateX(0);
+  }
+  
+  /* 页面内容在手机端全宽 - 增加左右间距，避免卡片拥挤 */
+  .page-content {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  /* 卡片在手机端优化 */
+  .card {
+    margin-bottom: 16px;
+  }
+  
+  .tc-panel-header {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .tc-panel-body {
+    padding: 12px 0 !important;
+  }
+}
+
+/* ============================================================
+ * ysyplat 全局样式增强 - 弹窗/表格/支付卡片/分页
+ * 渐变科技感 · 靛紫主色
+ * ============================================================ */
+
+/* —— 弹窗(modal) —— */
+.modal-content {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.18);
+}
+.modal-header {
+  border-bottom: 1px solid #ede9fe;
+  border-radius: 16px 16px 0 0;
+}
+.modal-header .modal-title {
+  color: #1e1b2e;
+  font-weight: 700;
+}
+.modal-footer {
+  border-top: 1px solid #ede9fe;
+  border-radius: 0 0 16px 16px;
+}
+.modal .btn-primary {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);
+  transition: all 0.25s;
+}
+.modal .btn-primary:hover {
+  background: linear-gradient(135deg, #5457e5, #4338ca);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.42);
+}
+.modal .btn-outline-light {
+  border-color: #e5e3f0;
+  color: #4b4662;
+  border-radius: 8px;
+}
+.modal .btn-outline-light:hover {
+  background: #f5f3ff;
+  border-color: #c7d2fe;
+}
+
+/* —— 表格(table) —— */
+.table thead th {
+  background: #f5f3ff !important;
+  color: #4b4662;
+  font-weight: 600;
+  border-bottom: 1px solid #ede9fe !important;
+}
+.table tbody tr:hover {
+  background: #faf9ff !important;
+}
+.table td, .table th {
+  border-color: #ede9fe;
+  vertical-align: middle;
+}
+
+/* 状态徽章 - 由 global.css 定义，不覆盖 */
+
+/* —— 分页(pagination) —— */
+.pagination .page-link {
+  color: #6366f1;
+  border: 1px solid #ede9fe;
+  border-radius: 6px;
+  margin: 0 3px;
+  transition: all 0.2s;
+}
+.pagination .page-link:hover {
+  background: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+.pagination .page-item.active .page-link {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+/* —— 支付卡片(pay) —— */
+.pay-body .pay-area {
+  border-radius: 12px;
+  border: 1px solid #ede9fe;
+  background: #fbfaff;
+}
+.addfunds-payment {
+  border: 1.5px solid #e5e3f0;
+  border-radius: 10px;
+  transition: all 0.25s;
+  background: #fff;
+  cursor: pointer;
+}
+.addfunds-payment:hover {
+  border-color: #a5b4fc;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+}
+.addfunds-payment.active {
+  border-color: #6366f1;
+  background: #f5f3ff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* —— 复选框(checkbox) —— */
+.custom-control-input:checked ~ .custom-control-label::before {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border-color: #6366f1;
+}
+
+/* —— 表单控件 —— */
+.form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* —— 安全中心卡片 —— */
+.security-header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1) !important;
+}
+
+/* —— 消息通知小铃铛红色徽标 —— */
+.badge-danger {
+  background: #ef4444;
+}
+
+/* —— tada 动画徽标 —— */
+.bx-tada {
+  color: #ef4444;
+}
+
+/* ============================================
+   资源列表表格样式 - 腾讯云风格
+   ============================================ */
+
+.tc-resource-table-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tc-resource-table-wrapper .table-responsive {
+  overflow-x: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.tc-resource-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.tc-resource-table thead {
+  background: #fafbfc;
+}
+
+.tc-resource-table thead th {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d2129;
+  text-align: center;
+  border-bottom: 1px solid #e5e6eb;
+  white-space: nowrap;
+}
+
+.tc-resource-table thead th:first-child {
+  text-align: left;
+}
+
+.tc-resource-table tbody td {
+  padding: 16px;
+  font-size: 14px;
+  color: #1d2129;
+  border-bottom: 1px solid #f2f3f5;
+  vertical-align: middle;
+}
+
+.tc-resource-table tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+.tc-resource-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 复选框样式 */
+.tc-resource-table .custom-control-input {
+  width: 16px;
+  height: 16px;
+}
+
+.tc-resource-table .custom-control-label {
+  cursor: pointer;
+}
+
+.tc-resource-table .custom-control-label::before {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  top: 0.125rem;
+}
+
+.tc-resource-table .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+/* 资源名称 */
+.tc-resource-name {
+  color: #1d2129;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+}
+
+.tc-resource-name:hover {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.tc-resource-domain {
+  font-size: 12px;
+  color: #86909c;
+  margin-top: 4px;
+}
+
+/* 状态点 */
+.tc-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #00d26a;
+}
+
+.tc-status-dot.bg-success {
+  background-color: #00d26a;
+}
+
+/* 套餐标签 */
+.tc-package-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #f2f3f5;
+  color: #4e5969;
+}
+
+.tc-package-badge.tc-package-free {
+  background-color: #f2f3f5;
+  color: #4e5969;
+}
+
+/* 操作按钮 */
+.tc-resource-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tc-action-link {
+  color: #6366f1;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tc-action-link:hover {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.tc-action-link i {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+/* 下拉菜单 */
+.tc-resource-actions .dropdown-menu {
+  min-width: 120px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e5e6eb;
+  padding: 4px 0;
+}
+
+.tc-resource-actions .dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #1d2129;
+}
+
+.tc-resource-actions .dropdown-item:hover {
+  background-color: #f2f3f5;
+  color: #6366f1;
+}
+
+/* 无数据 */
+.tc-no-data {
+  color: #86909c;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+/* 资源列表表格的分页样式 - 腾讯云风格 */
+.tc-resource-table-wrapper .table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e6eb;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-radius: 0 0 8px 8px;
+}
+
+.tc-resource-table-wrapper .table-pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tc-resource-table-wrapper .table-pageinfo {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4e5969;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tc-resource-table-wrapper .table-pageinfo span {
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.tc-resource-table-wrapper .table-pageinfo select {
+  padding: 4px 24px 4px 8px;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1d2129;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%234e5969' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 32px;
+  height: 28px;
+  line-height: 1.5;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.tc-resource-table-wrapper .table-pageinfo select:hover {
+  border-color: #6366f1;
+}
+
+.tc-resource-table-wrapper .table-pageinfo select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(0, 82, 217, 0.1);
+}
+
+.tc-resource-table-wrapper .pagination {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tc-resource-table-wrapper .pagination .page-item {
+  list-style: none;
+  margin: 0;
+}
+
+.tc-resource-table-wrapper .pagination .page-item .page-link {
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #1d2129;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  margin-left: 4px;
+  border-radius: 4px;
+  min-width: 32px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.tc-resource-table-wrapper .pagination .page-item:first-child .page-link {
+  margin-left: 0;
+}
+
+.tc-resource-table-wrapper .pagination .page-item .page-link:hover {
+  color: #6366f1;
+  border-color: #6366f1;
+  background-color: #f2f3f5;
+  text-decoration: none;
+}
+
+.tc-resource-table-wrapper .pagination .page-item.active .page-link {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff;
+}
+
+.tc-resource-table-wrapper .pagination .page-item.disabled .page-link {
+  color: #c9cdd4;
+  border-color: #e5e6eb;
+  background-color: #fafbfc;
+  cursor: not-allowed;
+}
+
+.tc-resource-table-wrapper .pagination .page-item.disabled .page-link:hover {
+  color: #c9cdd4;
+  border-color: #e5e6eb;
+  background-color: #fafbfc;
+  text-decoration: none;
+}
+
+.tc-pagination-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tc-pagination-total {
+  font-size: 14px;
+  color: #4e5969;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.tc-pagination-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.tc-pagination-limit {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4e5969;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.tc-pagination-limit span {
+  font-size: 14px;
+  color: #4e5969;
+  line-height: 1.5;
+}
+
+.tc-select-sm {
+  padding: 4px 24px 4px 8px;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1d2129;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%234e5969' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 32px;
+  height: 28px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.tc-select-sm:hover {
+  border-color: #6366f1;
+}
+
+.tc-select-sm:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(0, 82, 217, 0.1);
+}
+
+.tc-pagination-nav {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tc-pagination-nav .pagination {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tc-pagination-nav .pagination .page-item {
+  list-style: none;
+  margin: 0;
+}
+
+.tc-pagination-nav .pagination .page-item .page-link {
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #1d2129;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  margin-left: 4px;
+  border-radius: 4px;
+  min-width: 32px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.tc-pagination-nav .pagination .page-item:first-child .page-link {
+  margin-left: 0;
+}
+
+.tc-pagination-nav .pagination .page-item .page-link:hover {
+  color: #6366f1;
+  border-color: #6366f1;
+  background-color: #f2f3f5;
+}
+
+.tc-pagination-nav .pagination .page-item.active .page-link {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff;
+}
+
+.tc-pagination-nav .pagination .page-item.disabled .page-link {
+  color: #c9cdd4;
+  border-color: #e5e6eb;
+  background-color: #fafbfc;
+  cursor: not-allowed;
+}
+
+.tc-pagination-nav .pagination .page-item.disabled .page-link:hover {
+  color: #c9cdd4;
+  border-color: #e5e6eb;
+  background-color: #fafbfc;
+}
+
+/* 响应式：手机端表格优化 */
+@media (max-width: 767.98px) {
+  .tc-resource-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .tc-resource-table {
+    min-width: 800px;
+  }
+  
+  .tc-resource-table-wrapper .table-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .tc-resource-table-wrapper .table-pagination {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* —— 全站 ICP 页脚 —— */
+.ysy-footer-icp {
+  background: #f5f3ff;
+  border-top: 1px solid #ede9fe;
+  font-size: 12px;
+  color: #8b87a3;
+}
+.ysy-footer-icp a.ysy-footer-link {
+  color: #8b87a3;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.ysy-footer-icp a.ysy-footer-link:hover {
+  color: #6366f1;
+}
+.ysy-footer-icp .ysy-footer-sep {
+  margin: 0 6px;
+  color: #d1cfe3;
+}
+.ysy-footer-icp .ysy-footer-text {
+  color: #8b87a3;
+}
+

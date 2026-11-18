@@ -1,0 +1,351 @@
+/* ============================================================
+ * ysyplat Bento Grid 核心样式
+ * Apple WWDC 2025 风格 · 玻璃拟态 · 大号字体反差
+ * 字体: 系统字体栈,不依赖外部CDN
+ * ============================================================ */
+
+/* —— 背景 —— */
+.ysy-bg {
+  background: #0a0a0f url(https://www.ysyplat.cn/upload/back.webp) center / cover fixed;
+  min-height: 100vh;
+}
+
+/* —— Bento Grid 容器 —— */
+.ysy-bento {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* 响应式列数 */
+@media (min-width: 1200px) {
+  .ysy-bento { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ysy-bento { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .ysy-bento { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575.98px) {
+  .ysy-bento { grid-template-columns: 1fr; padding: 1rem; }
+}
+
+/* 跨列/跨行 */
+.ysy-span-2 { grid-column: span 2; }
+.ysy-span-3 { grid-column: span 3; }
+.ysy-span-4 { grid-column: span 4; }
+.ysy-row-2 { grid-row: span 2; }
+
+/* —— Liquid Glass 卡片（冻结hover动画，去除晃动） —— */
+.liquidGlass-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.liquidGlass-wrapper:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+.liquidGlass-effect {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  backdrop-filter: blur(4px);
+}
+.liquidGlass-tint {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.liquidGlass-shine {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.liquidGlass-text {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+/* 去掉 hover 缩放——不再晃眼睛 */
+
+/* 菜单项子样式 */
+.menu-item {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in;
+}
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+/* —— 卡片内文字 —— */
+.ysy-card {
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s ease;
+}
+.ysy-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ysy-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 超大标题 - 去掉动画，保留渐变，不再晃眼 */
+.ysy-hero {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0;
+  background: linear-gradient(135deg, #f5a623, #ff6b6b, #a855f7, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* 去掉动画循环，避免视觉晃动 */
+}
+
+/* 大号数字 */
+.ysy-stat {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+}
+.ysy-stat--gradient {
+  background: linear-gradient(135deg, #f5a623, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ysy-stat--purple {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ysy-stat--blue {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ysy-stat--green {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 英文小字点缀 */
+.ysy-label-en {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.3rem;
+}
+
+/* 中文大标题 */
+.ysy-title-cn {
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* 正文白色 */
+.ysy-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(0.82rem, 1.1vw, 0.95rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* —— 表单控件（登录专用） —— */
+.ysy-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.2rem;
+  padding: 0.9rem 1.2rem;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.25s;
+  backdrop-filter: blur(10px);
+}
+.ysy-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+.ysy-input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+/* 按钮 */
+.ysy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+  text-decoration: none;
+}
+.ysy-btn--primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+}
+.ysy-btn--primary:hover {
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+}
+.ysy-btn--ghost {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ysy-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* —— 登录两步式 —— */
+.ysy-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.ysy-step__indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.ysy-step__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+.ysy-step__dot.active {
+  background: #fff;
+  width: 20px;
+  border-radius: 3px;
+}
+.ysy-step__back {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0;
+  border: none;
+  background: none;
+}
+.ysy-step__back:hover {
+  color: #fff;
+}
+
+/* —— 动画（仅保留淡入，去掉缩放/位移晃眼的） —— */
+.ysy-fade-in {
+  animation: ysyFadeIn 0.5s ease forwards;
+}
+.ysy-fade-up {
+  animation: ysyFadeUp 0.6s ease forwards;
+}
+@keyframes ysyFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes ysyFadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 动画延迟工具 */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* —— 图标 —— */
+.ysy-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.ysy-icon-wrap--orange {
+  background: linear-gradient(135deg, rgba(245,166,35,0.2), rgba(255,107,107,0.2));
+  color: #f5a623;
+}
+.ysy-icon-wrap--purple {
+  background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(99,102,241,0.2));
+  color: #a855f7;
+}
+.ysy-icon-wrap--blue {
+  background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.2));
+  color: #3b82f6;
+}
+.ysy-icon-wrap--green {
+  background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(52,211,153,0.2));
+  color: #10b981;
+}
+
+/* —— 响应式 1920px+ —— */
+@media (min-width: 1920px) {
+  .ysy-bento {
+    max-width: 1800px;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .ysy-card { padding: 2.5rem; border-radius: 2.2rem; }
+}
+
+/* 移除glass-distortion滤镜，避免重渲染闪烁 */
